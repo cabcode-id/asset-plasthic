@@ -37,8 +37,4 @@
   <path d="M4 22 L60 16 L60 20 L4 24 Z"
         fill="url(#shine-o)"/>
 
-  <!-- Subtle paper stack inside -->
-  <rect x="12" y="34" width="40" height="4" rx="1" fill="#ffffff" opacity="0.55"/>
-  <rect x="12" y="41" width="34" height="4" rx="1" fill="#ffffff" opacity="0.40"/>
-  <rect x="12" y="48" width="28" height="4" rx="1" fill="#ffffff" opacity="0.30"/>
 </svg>
