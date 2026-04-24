@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="back-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#E8921F"/>
+      <stop offset="100%" stop-color="#A55A0A"/>
+    </linearGradient>
+    <linearGradient id="front-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#F5B830"/>
+      <stop offset="100%" stop-color="#D4851A"/>
+    </linearGradient>
+    <linearGradient id="inside-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#FDE8B0"/>
+      <stop offset="100%" stop-color="#F5C76A"/>
+    </linearGradient>
+    <linearGradient id="shine-o" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow-o" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#7a4200" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Back panel -->
+  <path d="M4 22 L4 54 Q4 57 7 57 L57 57 Q60 57 60 54 L60 26 Q60 23 57 23 L32 23 L30 20 Q29 18 27 18 L8 18 Q4 18 4 22 Z"
+        fill="url(#back-grad)" filter="url(#shadow-o)"/>
+
+  <!-- Inside of folder (visible when open) -->
+  <path d="M6 28 L6 54 Q6 55 7 55 L57 55 Q58 55 58 54 L58 28 Z"
+        fill="url(#inside-grad)"/>
+
+  <!-- Front flap (open lid) -->
+  <path d="M4 22 L60 16 L60 26 L4 26 Z"
+        fill="url(#front-grad)" filter="url(#shadow-o)"/>
+
+  <!-- Shine on flap -->
+  <path d="M4 22 L60 16 L60 20 L4 24 Z"
+        fill="url(#shine-o)"/>
+
+  <!-- Subtle paper stack inside -->
+  <rect x="12" y="34" width="40" height="4" rx="1" fill="#ffffff" opacity="0.55"/>
+  <rect x="12" y="41" width="34" height="4" rx="1" fill="#ffffff" opacity="0.40"/>
+  <rect x="12" y="48" width="28" height="4" rx="1" fill="#ffffff" opacity="0.30"/>
+</svg>
